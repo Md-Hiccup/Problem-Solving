@@ -1,3 +1,3 @@
 ##  PROBLEM SOLVING ##
 
-Problem solving from Hackerearth and Hackerrank.
+Data Structure & Algorithms Problem solving from Hackerearth and Hackerrank.

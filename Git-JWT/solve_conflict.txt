@@ -1,0 +1,7 @@
+1.  git checkout dev
+2.  git pull origin dev
+3.  git checkout <working branch>
+4.  git merge dev       ( By UI)
+5.  git add .
+6.  git commit -m 'some message'
+7.  git push origin <working branch>

@@ -47,8 +47,6 @@ for i in range(len(arr)-1, -1, -1):
     if i < 0:
         index = -1
     elif arr[i] == m:
-        print(arr[i], m, i)
         index += i
-        print(index)
         break
 print(index)

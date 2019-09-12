@@ -1,4 +1,4 @@
-package algo.linkedlist
+package easyToAdvancedDS.linkedlist
 
 /**
  * Created by dastaniqbal on 11/09/2019.

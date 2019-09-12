@@ -1,4 +1,4 @@
-package algo.linkedlist
+package easyToAdvancedDS.linkedlist
 
 import java.lang.RuntimeException
 

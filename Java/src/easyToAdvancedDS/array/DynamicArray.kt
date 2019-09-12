@@ -1,4 +1,4 @@
-package algo.array
+package easyToAdvancedDS.array
 
 /**
  * Created by dastaniqbal on 11/09/2019.

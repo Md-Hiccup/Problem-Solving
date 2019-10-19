@@ -1,0 +1,53 @@
+##### HASHEDIN #####
+Recruitment Process started with a pen and paper.
+
+1. Sort and reverse a linked list. 
+2. How to Detect circular linked list.
+2. Find out if a tree is a bst  or not.
+3. Create a binary tree with given linked list.  
+4. prefix postfix infix conversion.
+5. sql query
+6. evaluate Postfix expression.
+7. time complexity questions
+8. MST
+9. Implement a stack using a circular linked list.  
+10. AVL tree
+11. Design a game of Chess.
+12. Design snake and ladders.
+13. longest width of a binary tree
+14. In tree find the level which has maximum nodes
+15. Implement a min stack with only one stack
+16. Check whether two strings are rotation of each other without library functions.
+17. Check whether two nodes are cousins of each other(nodes of same level and with different parents.
+18. when records about population is to be maintained for each city, which data structure you use and the reason.
+19. sudoku game
+20. Pre-order, in order, and post order traversal of tree
+21. Time and space complexities of various searching and sorting algorithms  
+22. find the minimum number of moves to win in a given snake and ladder game  
+23. How will you design the DNS system.
+24. Write a SQL query for selecting the second highest salary in table employee.
+25. Check if the given string is in the same orientation or not .
+    ex hashed
+    q1 edhash yes
+    q2 dehash no
+    q3 hedhas yes  
+26. Write the function for tic tac toe game. 
+27. To print all the left nodes of a tree.
+28. Design a system for playing Snake and Ladders.  
+29. How to multiply two large numbers that do not fit into the limits of an integer
+30. How would you design the stack overflow website?
+31. Write a program to print the preorder traversal of the mirror image of a BST.
+32. To find wheather the 2 nodes are ansistors are not
+33. Put all the zeros present in the array at the end.
+34. Print all the nodes in a tree at distance k from the root node.
+35. Island problems- 2D array is given(n*n) and all the cells are filled with 1's and 0's, 1 represent land and 0 water. 
+    Find the total no. of islands.
+36. reverse 3 character at a time in a string.
+37. Root to leaf path sum equal to a given number
+38. Maximum sum hourglass  
+39. Bridge and torch problem  
+40. Find the maximum area of histogram.
+41. Write a program to determine whether 2 paragraphs are same. The sentences & words in the paragraphs can be jumbled in any order, but it should be considered the same.  
+42. Write a program to generate a palindrome binary string of length n. There should be a repeated sequence/ pattern for each interval of size m. The binary string should start with 1. And there should be maximum number of zeros in the string
+43. How to load multiple images on a page without impacting the performance.
+44. Difference between mixin and inheritance in CSS

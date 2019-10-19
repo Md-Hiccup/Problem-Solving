@@ -47,19 +47,17 @@ class LinkedList:
         
         self.head = prev
         self.show()
-        
-
 
 if __name__ == '__main__':
     ll = LinkedList()
-    ll.pushFront(3)
     ll.pushFront(4)
-    ll.pushFront(5)
+    ll.pushFront(2)
+    ll.pushFront(1)
     
-    ll.pushBack(2)
-    ll.pushBack(1)
+    ll.pushBack(5)
+    ll.pushBack(6)
 
-    ll.pushFront(6)
+    ll.pushFront(3)
 
     # Normal Linked List 
     print('Normal Linked List')

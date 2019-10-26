@@ -13,13 +13,14 @@ smtb_server = ''
 import smtplib, ssl
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from datetime import datetime
 
 sender_email = "hussain.mohammad@valueleaf.com"
 receiver_email = "ask2md@gmail.com"
 password = input("Type your password and press enter:")
 
 message = MIMEMultipart("alternative")
-message["Subject"] = "multipart test"
+message["Subject"] = "[%s] Multipart test" % (datetime.now().strftime("%d-%h-%Y %H:%M"))
 message["From"] = sender_email
 message["To"] = receiver_email
 

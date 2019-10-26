@@ -55,7 +55,7 @@ class LinkedList:
             prev = curr
             curr = next
         self.head = prev
-
+        self.printList()
 
     #Method 2: To Recursive Reverse of the linked list
     def reverseRecursive(self, curr, prev):
@@ -76,6 +76,7 @@ class LinkedList:
         if self.head is None:
             return
         self.reverseRecursive(self.head, None)
+        self.printList()
         
 
     # Method 1: To Find Middle of the linked list
@@ -86,6 +87,8 @@ class LinkedList:
         fast = fast.next.next
         Once fast react to end, slow will reach to middle
         """
+        self.printList()
+
         slow = self.head
         fast = self.head
         while (fast is not None and fast.next != None):
@@ -99,6 +102,8 @@ class LinkedList:
         """
         set mid to mid.next when count is odd, when count reach to end mid will traverse half.
         """
+        self.printList()
+
         count = 0
         temp = self.head
         mid = self.head
@@ -114,6 +119,8 @@ class LinkedList:
         """
         Iterative Method to find the middle of the linked list.
         """
+        self.printList()
+
         temp = self.head
         count = 0
         while (temp != None):
@@ -128,13 +135,64 @@ class LinkedList:
         
         print(start.data)
 
+    # To copy the linked list
+    def copy(self):
+        temp = self.head
+        res = LinkedList()
+        while (temp != None):
+            print(temp.data)
+            res.pushEnd(temp.data)
+            temp = temp.next
+        return res
+
     # To print the linked list
     def printList(self):
         temp = self.head
         while(temp != None):
             print(temp.data, end='->')
             temp = temp.next
-        print()
+        print(temp)
+
+
+
+
+    #Method 1: Use Hashing to detect the loop in linked list
+    def detectLoop(self):
+        """
+        Detecting a Loop by using Hashing
+        """
+        s = set()
+        temp = self.head
+        while (temp != None):
+            if temp in s:
+                print('Loop is there at {}'.format(temp.data))
+                return
+            s.add(temp)
+            temp = temp.next
+        print('No loop is there')
+        return 
+
+    # Method 2: Using Mark Visited Nodes to finding a loop.
+    # Add visited flag in Node class. While traversing, keep marking visited nodes.
+    # If you see visited node again then there is a loop otherwise No loop is there.
+
+    # Method 3: Using Floyd's Cycle-Finding Algorithm to finding a loop
+    def detectLoop2(self):
+        """
+        Detecting a loop by using Floyd's Cycle-Finding algorithm
+        """
+        slow = self.head
+        fast = self.head
+        while (slow and fast and fast.next):
+            slow = slow.next
+            fast = fast.next.next
+
+            if slow == fast:
+                print('Loop found at %d' % (slow.data))
+                return
+        
+        print('No loop found')
+        return
 
 
 
@@ -159,23 +217,31 @@ if __name__ == '__main__':
     print('Linked List')
     llist.printList()
 
-    llist.reverse()
+
 
     print('\nNormal reverse of Linked List')
-    llist.printList()
+    llist.reverse()
 
     print('\nRecursive reverse of Linked List')
     llist.recursRev()
-    llist.printList()
+
+
 
     print('\nMiddle of the Linked List')
-    llist.printList()
     llist.printMiddle()
 
     print('\nRecursive method to find the middle of the linked list')
-    llist.printList()
     llist.printMiddle2()
 
     print('\nIterative Method for finding middle of the linked list')
-    llist.printList()
     llist.printMiddle3()
+
+
+    # Creating loop
+    llist.head.next.next.next.next.next.next.next.next.next = llist.head
+
+    print('\nDetect Loop in Linked List by Hashing')
+    llist.detectLoop()
+
+    print("\nDetect Loop in Linked List by Floyd's Cycle-Finding algorithm")
+    llist.detectLoop2()

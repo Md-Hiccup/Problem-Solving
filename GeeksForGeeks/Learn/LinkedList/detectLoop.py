@@ -116,7 +116,7 @@ if __name__ == '__main__':
     llist.printList()
 
 
-
+    # Creating loop
     llist.head.next.next.next.next.next.next.next.next.next = llist.head
 
     print('\nDetect Loop in Linked List by Hashing')

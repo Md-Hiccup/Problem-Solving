@@ -112,3 +112,7 @@ if __name__ == '__main__':
     # Reversed Linked List
     print('Reverse Linked List')
     ll.reverse()
+
+    # Recursive Reverse Linked List
+    print('Recursive Linked List')
+    ll.recursRev()

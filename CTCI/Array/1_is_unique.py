@@ -3,7 +3,7 @@ Is Unique: Implement an algorithm to determine if a string has all unique charac
 cannot use additional data structures?
 Hints: 
 #44     =   Try a Hash Table.
-#777    =   Could a bit vector be useful?
+#117    =   Could a bit vector be useful?
 #132    =   Can you solve it in O(N log N) time? What might a solution like that look like?
 """
 

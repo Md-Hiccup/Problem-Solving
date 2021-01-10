@@ -1,0 +1,29 @@
+package hackerrank.regex;
+
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class HackerRankTweet {
+    static int hackerRankTweet(String line) {
+        Pattern p = Pattern.compile("hackerrank",Pattern.CASE_INSENSITIVE);
+        Matcher m = p.matcher(line);
+        int count = 0;
+        while (m.find()) {
+            count++;
+        }
+        return count;
+    }
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        int n = Integer.parseInt(in.nextLine());
+
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            String line = in.nextLine();
+            sum += hackerRankTweet(line);
+        }
+        System.out.println(sum);
+    }
+}

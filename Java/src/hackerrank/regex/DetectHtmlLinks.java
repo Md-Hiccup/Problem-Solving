@@ -5,7 +5,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class DetectHtmlLinks {
-    public static void main(String str[]) {
+    public static void main(String[] str) {
         Scanner in = new Scanner(System.in);
         Pattern p = Pattern.compile("<a href=\"(.+?)\".*?>\\s?([^<]*)<\\/",Pattern.MULTILINE);
 
